@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "react-ui",
   "private": true,
   "version": "0.0.0",
@@ -24,5 +25,21 @@
     "eslint-plugin-react-refresh": "^0.4.14",
     "globals": "^15.11.0",
     "vite": "^5.4.10"
+=======
+  "name": "react-ms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/standalone": "^7.26.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+>>>>>>> 96e5b263d8a31faf0f3ba5fcf6d4a3f3d2e4ae45
   }
 }
