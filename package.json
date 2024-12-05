@@ -1,18 +1,32 @@
 {
-<<<<<<< HEAD
-  "name": "react-ui",
+  "name": "React-UI",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
+    "@babel/standalone": "^7.26.2",
+    "@popperjs/core": "^2.11.8",
+    "axios": "^1.7.9",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "jQuery": "^1.7.4",
+    "jsdom": "^25.0.1",
+    "moment": "^2.30.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
@@ -25,21 +39,5 @@
     "eslint-plugin-react-refresh": "^0.4.14",
     "globals": "^15.11.0",
     "vite": "^5.4.10"
-=======
-  "name": "react-ms",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@babel/standalone": "^7.26.2",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
->>>>>>> 96e5b263d8a31faf0f3ba5fcf6d4a3f3d2e4ae45
   }
 }
