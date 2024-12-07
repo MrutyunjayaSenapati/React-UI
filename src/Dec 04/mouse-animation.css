@@ -7,12 +7,3 @@
     
 }
 
-@keyframes Zoom {
-    from{
-        transform: scale(1) rotate(0deg);
-    }
-    to{
-        transform: scale(2) rotate(360deg);
-    }
-    
-}
