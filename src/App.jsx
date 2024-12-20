@@ -18,6 +18,9 @@ import Dec13 from './Dec 13/Dec13'
 import Dec14 from './Dec 14/Dec14'
 import Dec16 from './Dec 16/Dec16'
 import Dec17 from './Dec 17/Dec17'
+import Dec18 from './Dec 18/Dec18'
+import Dec19 from './Dec 19/Dec19'
+import Dec20 from './Dec 20/Dec20'
 
 function App() {
  
@@ -41,7 +44,11 @@ function App() {
      {/* <Dec13/> */}
      {/* <Dec14/> */}
      {/* <Dec16/> */}
-     <Dec17/>
+     {/* <Dec17/> */}
+     {/* <Dec18/> */}
+     {/* <Dec19/> */}
+     <Dec20/>
+
      
     </>
   )
