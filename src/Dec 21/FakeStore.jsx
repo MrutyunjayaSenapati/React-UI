@@ -15,7 +15,13 @@ export default function FakeStore() {
         })        
     }
     function handleCategoryChange(e){
-        
+        if(e.target.value==='all'){
+            LoadProduct(`https://fakestoreapi.com/product`);
+
+        }
+        else{
+            LoadProduct(`https://fakestoreapi.com/products/category/${e.target.value}`);
+        }
     }
     function LoadProduct(url){
         axios.get(url)
@@ -46,9 +52,42 @@ export default function FakeStore() {
             <span><a href="#" className="text-black text-decoration-none">Jewelery</a></span>
           </div>
           <div>
-            <button className="btn bi bi-cart4 text-black" style={{ border: "none" }} aria-label="Cart">
-             
+            <button data-bs-toggle="modal" data-bs-target="#cart" className="btn bi bi-cart4 position-relative text-black" style={{ border: "none" }} aria-label="Cart">
+           <span className="badge bg-danger position-absolute rounded rounded-circle">{cartCount}</span>
             </button>
+
+            <div className="modal fade"id="cart">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h3>Your Cart Items</h3>
+                            <button className="btn btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div className="modal-body">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Preview</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {
+                                        cartItems.map(item=><tr key={item.id}>
+                                            <td>{item.title}</td>
+                                            <td>
+                                                <img width="50"height="50" src={item.image} alt="" />
+                                            </td>
+                                        </tr>)
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
           </div>
         </header>
         <section className="mt-4 row">
@@ -56,7 +95,7 @@ export default function FakeStore() {
                 <div>
                     <label >Select Category</label>
                     <div>
-                        <select className="form-select">{
+                        <select className="form-select" onChange={handleCategoryChange}>{
                             categories.map((category)=>
                                 <option value={category}key={category}>{category.toUpperCase()}</option>
                             )
