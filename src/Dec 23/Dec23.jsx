@@ -5,8 +5,8 @@ import { ClassComponent } from './ClassComponent'
 export default function Dec23() {
   return (
     <div>
-       {/* <FakeStore/>  */}
-       <ClassComponent/>
+       <FakeStore/> 
+       {/* <ClassComponent/> */}
     </div>
   )
 }
